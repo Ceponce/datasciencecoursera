@@ -22,9 +22,7 @@ truths[true] <- TRUE
 # for standard deviation
 stdtrue <- grep("std", hold)
 truths[stdtrue] <- TRUE
-# now to limit the features to mean and std
-t <- c("TRUE", "TRUE")
-t <- append(t, truths)
+
 
 
 # pointless but for my own reference, Set names of x values
