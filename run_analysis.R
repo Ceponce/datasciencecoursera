@@ -1,13 +1,13 @@
 
-X_train <- read.table("~/OneDrive/DataScience/GETing+Cleaning+Data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt", quote="\"")
+X_train <- read.table("getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt", quote="\"")
 
-y_train <- read.table("~/OneDrive/DataScience/GETing+Cleaning+Data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt", quote="\"")
+y_train <- read.table("getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt", quote="\"")
 
-X_test <- read.table("~/OneDrive/DataScience/GETing+Cleaning+Data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt", quote="\"")
+X_test <- read.table("getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt", quote="\"")
 
-y_test <- read.table("~/OneDrive/DataScience/GETing+Cleaning+Data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt", quote="\"")
+y_test <- read.table("getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt", quote="\"")
 
-features <- read.table("~/OneDrive/DataScience/GETing+Cleaning+Data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/features.txt", quote="\"")
+features <- read.table("getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/features.txt", quote="\"")
 
 # prob useless but attempt to m ake data frame
 X_train_df <- data.frame(matrix(unlist(X_train), nrow=7352, byrow=T))
