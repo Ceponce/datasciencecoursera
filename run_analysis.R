@@ -69,8 +69,8 @@ id_train <- replicate(7352, "train")
 id_test <- replicate(2947, "test")
 id_train <- as.data.frame(id_train)
 id_test <- as.data.frame(id_test)
-colnames(id_train) <- "Train/Test"
-colnames(id_test) <- "Train/Test"
+colnames(id_train) <- "identitifer"
+colnames(id_test) <- "identitifer"
 train <- cbind(id_train, train)
 test <- cbind(id_test, test)
 
@@ -79,4 +79,4 @@ test <- cbind(id_test, test)
 data <- rbind(train, test)
 
 # To output the file
-write.table(data, file = "random.txt", row.name=FALSE) 
+write.table(data, file = "~/OneDrive/DataScience/GETing+Cleaning+Data/random.txt", row.name=FALSE) 
